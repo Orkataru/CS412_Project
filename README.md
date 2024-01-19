@@ -1,22 +1,25 @@
 Table of contents
 
-1. Introduction
+<a id="introduction">1. Introduction</a><br/>
+<a id="extracting-and-storing">2. Extracting and Storing Data</a><br/>
+<a id="preprocessing">3. Preprocessing</a><br/>
+<a id="feature-engineering">4. Feature Engineering</a><br/>
+<a id="finalizing">5. Finalizing the Data</a><br/>
+<a id="upsampling-running-model">6. Applying Upsampling and Running the Model</a><br/>
 
-1. Extracting and Storing Data
 
-1. Preprocessing
 
-1. Feature Engineering
 
-1. Finalizing the Data
 
-1. Applying Upsampling and Running the Model
 
-**CS412 Group Project: Predicting Homework Scores with ChatGPT**
+
+
+
+## [CS412 Group Project: Predicting Homework Scores with ChatGPT](#introduction)
 
 This project consists of a ML model that tries to predict the homework scores of a student based on the ChatGPT history which they used while doing the homework. By analyzing the interactions between students and ChatGPT, we explore the potential correlation between the assistance interactions and homework grades.
 
-**Extracting and Storing Data**
+## [Extracting and Storing Data](#extracting-and-storing)
 
 - The code firstly processes the ChatGPT histories stored as HTML files and puts them in a dictionary. The dictionary stores them with the students’ ids as keys and the prompts and answers as values.
 - The code then creates a separate disctionary to store just the user prompts, for easier integration into functions.
@@ -26,7 +29,7 @@ This project consists of a ML model that tries to predict the homework scores of
 - Finally, the code extracts our main labels, the student scores.
 
 
-**Preprocessing**
+## [Preprocessing](#preprocessing)
 
 - Preprocessing is applied to both the questions and user prompts to clean the data consisting of words. Tabs, newlines, non-ASCII words, words that only have numbers, data paths and multiple spaces are removed.
 - The words that only occur once are also removed.
@@ -34,7 +37,7 @@ This project consists of a ML model that tries to predict the homework scores of
 - A word frequency matrix is then formed by using TF-IDF vectorizer.
 - We then identify the student chats where the student score is outside of mean ± standart deviation. This is done to get rid of outliers that might harm the data. We also remove values directly equal to 100, as we use those values as the “golden standart” of one our features.
 
-**Feature Engineering**
+## [Feature Engineering](#feature-engineering)
 
 - Code similarity: Calculated by finding the similarity between all students and those who got perfect scores. 
 - Question similarity: Calculated by finding the similarity of each student’s prompt with the questions of the assignment. This is given as a separate feature for each question.
@@ -53,13 +56,13 @@ This project consists of a ML model that tries to predict the homework scores of
   - Problem-Solving Skills
   - Learning and Adaptation
 
-**Finalizing the data.**
+## [Finalizing the data.] (#finalizing)
 
 - The code inserts all the data into the DataFrame
 - The code then filters out the students that were marked to be filtered out. (Outliers and perfect scorers)
 - DataFrame is then finalized and is merged with the rest of the featured.
 
-**Applying Upsampling and running the model.**
+## [Applying Upsampling and running the model.] (#upsampling-running-model)
 
 - The code applies Manual Upsampling to the DataFrame to prevent certain small classes from being underrepresented.
 - The code then uses stratified K fold to obtain a more accurate test result. Hyperparameter tuning is used alongside the K fold to get the best parameters for all the folds.
@@ -70,9 +73,6 @@ This project consists of a ML model that tries to predict the homework scores of
 Authors
 
 Bilgehan Bilgin
-
 Sadiq Qara
-
 Zeynep Özgür Gün
-
 Beste Bayhan
