@@ -57,7 +57,7 @@ This project consists of a ML model that tries to predict the homework scores of
 
 Authors
 
-Bilgehan Bilgin (00030902)
-Sadiq Qara (00030410)
-Zeynep Özgür Gün (00029502)
+Bilgehan Bilgin (00030902) <br />
+Sadiq Qara (00030410) <br />
+Zeynep Özgür Gün (00029502) <br />
 Beste Bayhan (00028863)
