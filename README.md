@@ -49,8 +49,10 @@ This project consists of a ML model that tries to predict the homework scores of
 - The code applies Manual Upsampling to the DataFrame to prevent certain small classes from being underrepresented.
 - The code then uses stratified K fold to obtain a more accurate test result. Hyperparameter tuning is used alongside the K fold to get the best parameters for all the folds.
 - The model is then run for all the folds, using a variety of Regression models, and is compared to the accuracies of the model initially given to us also ran with the same models. 
-- The table of the results can be found below.  
+- The table of the results can be found below.
 
+## Results
+![image](https://github.com/Orkataru/CS412_Project/assets/81559141/1294a6d1-b687-4191-a641-40b69fdf19a0)
 
 Authors
 
