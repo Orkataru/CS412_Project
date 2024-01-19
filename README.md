@@ -52,7 +52,8 @@ This project consists of a ML model that tries to predict the homework scores of
 - The table of the results can be found below.
 
 ## Results
-![image](https://github.com/Orkataru/CS412_Project/assets/81559141/bde6444e-3f1c-4bbe-972a-1b91142214ec)
+![image](https://github.com/Orkataru/CS412_Project/assets/81559141/104bd65a-37a1-401f-b129-1fb373c582ff)
+
 
 
 
