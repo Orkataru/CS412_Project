@@ -41,9 +41,8 @@ This project consists of a ML model that tries to predict the homework scores of
 - Average characters per prompt/response: Calculated by counting the total number of characters in a prompt/response and then at the end divided by the number of prompts/responses.
 - Keyword Occurrence: Calculated by counting the number of times each keyword is found. The list of keywords is given below:
 
-  ![A black screen with white text
+  ![Aspose Words 92108f4f-65b0-468b-8f6e-6114b7f94085 001](https://github.com/Orkataru/CS412_Project/assets/91630525/61016bce-651f-47c4-a6b2-a842149ef83e)
 
-Description automatically generated](Aspose.Words.92108f4f-65b0-468b-8f6e-6114b7f94085.001.png)
 
 - Joy and Anger: Obtained by implementing a sentiment analysis tool.
 - Intelligence Scored: An abstract value that represents the overall intelligence of the student, as best as possible given just the text data, uses the following metrics to get close to an objective rating:
